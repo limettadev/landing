@@ -34,7 +34,7 @@ body {
 .button {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
     padding: 0.875rem 1rem;
     text-decoration: none;
     color: #ffffff;
@@ -44,13 +44,51 @@ body {
     font-size: 0.95rem;
 }
 
-.button:hover {
+.server-button {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0.875rem 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.server-button span {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.ip {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.95em;
+}
+
+.button:hover, .server-button:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
 .button img {
     width: 20px;
     height: 20px;
+    flex-shrink: 0;
+}
+
+.server-button img {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.copy-icon {
+    width: 20px !important;
+    height: 20px !important;
     flex-shrink: 0;
 }
 
