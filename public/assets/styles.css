@@ -63,3 +63,8 @@ body {
 .invert {
     filter: invert(1);
 }
+
+.pixelly {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
